@@ -15,6 +15,9 @@ namespace MobilesSaleManagementApp
         public Form1()
         {
             InitializeComponent();
+            Label lb = new Label();
+            lb.Text = "Hello";
+            Controls.Add(lb);
         }
     }
 }
