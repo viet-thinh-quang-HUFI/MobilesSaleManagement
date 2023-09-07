@@ -18,6 +18,9 @@ namespace MobilesSaleManagementApp
             Label lb = new Label();
             lb.Text = "Hello";
             Controls.Add(lb);
+            Label lb1 = new Label();
+            lb1.Text = "Hello";
+            Controls.Add(lb1);
         }
     }
 }
