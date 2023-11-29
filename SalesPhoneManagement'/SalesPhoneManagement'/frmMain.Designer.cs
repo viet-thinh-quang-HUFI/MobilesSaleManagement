@@ -237,6 +237,7 @@
             this.iconButton2.TabIndex = 2;
             this.iconButton2.Text = "Khách hàng";
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // btnClose
             // 

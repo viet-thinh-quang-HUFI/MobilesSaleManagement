@@ -215,7 +215,13 @@ namespace SalesPhoneManagement_
             cbBLT.Text = dgvSanPham.CurrentRow.Cells["Bluetooth"].Value.ToString();
             cbDLPin.Text = dgvSanPham.CurrentRow.Cells["BatteryCapacity"].Value.ToString();
             cbLoaiPin.Text = dgvSanPham.CurrentRow.Cells["TypeOfPin"].Value.ToString();
-            cbHang.Text = dgvSanPham.CurrentRow.Cells["BrandID"].Value.ToString();
+            foreach (BRAND item in cbHang.Items)
+            {
+                if (item.BrandID == dgvSanPham.CurrentRow.Cells["BrandID"].Value.ToString())
+                {
+                    cbHang.Text = item.BrandName;
+                }
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
