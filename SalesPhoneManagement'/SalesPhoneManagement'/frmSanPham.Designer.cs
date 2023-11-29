@@ -34,6 +34,12 @@
             this.btnSua = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
+            this.txtHDH = new System.Windows.Forms.TextBox();
+            this.txtHieuNang = new System.Windows.Forms.TextBox();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.txtWidth = new System.Windows.Forms.TextBox();
+            this.txtMCheo = new System.Windows.Forms.TextBox();
+            this.txtScreen = new System.Windows.Forms.TextBox();
             this.txtAnh = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -57,6 +63,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbLoaiPin = new System.Windows.Forms.ComboBox();
             this.cbHang = new System.Windows.Forms.ComboBox();
+            this.txtSim = new System.Windows.Forms.TextBox();
+            this.txtDLPin = new System.Windows.Forms.TextBox();
+            this.txtBLT = new System.Windows.Forms.TextBox();
+            this.txtWF = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -139,6 +149,72 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // txtHDH
+            // 
+            this.txtHDH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHDH.Location = new System.Drawing.Point(962, 195);
+            this.txtHDH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHDH.Multiline = true;
+            this.txtHDH.Name = "txtHDH";
+            this.txtHDH.Size = new System.Drawing.Size(250, 30);
+            this.txtHDH.TabIndex = 38;
+            // 
+            // txtHieuNang
+            // 
+            this.txtHieuNang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHieuNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHieuNang.Location = new System.Drawing.Point(962, 153);
+            this.txtHieuNang.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHieuNang.Multiline = true;
+            this.txtHieuNang.Name = "txtHieuNang";
+            this.txtHieuNang.Size = new System.Drawing.Size(250, 30);
+            this.txtHieuNang.TabIndex = 38;
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeight.Location = new System.Drawing.Point(962, 108);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHeight.Multiline = true;
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(250, 30);
+            this.txtHeight.TabIndex = 37;
+            // 
+            // txtWidth
+            // 
+            this.txtWidth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWidth.Location = new System.Drawing.Point(962, 64);
+            this.txtWidth.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWidth.Multiline = true;
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(250, 30);
+            this.txtWidth.TabIndex = 36;
+            // 
+            // txtMCheo
+            // 
+            this.txtMCheo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMCheo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMCheo.Location = new System.Drawing.Point(461, 237);
+            this.txtMCheo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMCheo.Multiline = true;
+            this.txtMCheo.Name = "txtMCheo";
+            this.txtMCheo.Size = new System.Drawing.Size(250, 30);
+            this.txtMCheo.TabIndex = 35;
+            // 
+            // txtScreen
+            // 
+            this.txtScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScreen.Location = new System.Drawing.Point(461, 195);
+            this.txtScreen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtScreen.Multiline = true;
+            this.txtScreen.Name = "txtScreen";
+            this.txtScreen.Size = new System.Drawing.Size(250, 30);
+            this.txtScreen.TabIndex = 34;
             // 
             // txtAnh
             // 
@@ -390,6 +466,16 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.txtSim);
+            this.panel1.Controls.Add(this.txtHDH);
+            this.panel1.Controls.Add(this.txtDLPin);
+            this.panel1.Controls.Add(this.txtBLT);
+            this.panel1.Controls.Add(this.txtHieuNang);
+            this.panel1.Controls.Add(this.txtWF);
+            this.panel1.Controls.Add(this.txtHeight);
+            this.panel1.Controls.Add(this.txtWidth);
+            this.panel1.Controls.Add(this.txtMCheo);
+            this.panel1.Controls.Add(this.txtScreen);
             this.panel1.Controls.Add(this.txtAnh);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.txtTen);
@@ -799,6 +885,12 @@
         private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton btnThem;
+        private System.Windows.Forms.TextBox txtHDH;
+        private System.Windows.Forms.TextBox txtHieuNang;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.TextBox txtWidth;
+        private System.Windows.Forms.TextBox txtMCheo;
+        private System.Windows.Forms.TextBox txtScreen;
         private System.Windows.Forms.TextBox txtAnh;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -815,6 +907,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtSim;
+        private System.Windows.Forms.TextBox txtDLPin;
+        private System.Windows.Forms.TextBox txtBLT;
+        private System.Windows.Forms.TextBox txtWF;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;

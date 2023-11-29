@@ -24,6 +24,7 @@ namespace SalesPhoneManagement_
         {
             InitializeComponent();
         }
+        String[] loaipin = { "Li-Ion", "Li-Po" };
         private void loadData_SP()
         {
             dgvSanPham.DataSource = phoneDAL.loadDaTaSP();
