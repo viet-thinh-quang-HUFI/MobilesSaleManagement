@@ -18,6 +18,19 @@ namespace DAL
         {
             return db.PHONEs.Where(c => c.PhoneID.Equals(id)).Count() > 0;
         }
+        public bool existsPhone_BrandID(string id)
+        {
+            bool exists = db.PHONEs.Where(v => v.BrandID.Equals(id)).Count() > 0;
+            if (exists)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
         public void themSanPham(PHONE id)
         {
             bool existSP = db.PHONEs.Where(k => k.PhoneID == id.PhoneID).Count() > 0;
@@ -47,6 +60,33 @@ namespace DAL
                 db.SubmitChanges();
             }
         }
+        public void suaPhone(PHONE phone)
+        {
+            PHONE pn = db.PHONEs.FirstOrDefault(k => k.PhoneID == phone.PhoneID);
+            if (pn == null)
+            {
+                throw new Exception("Không có thông tin sản phẩm này!");
+            }
+            else
+            {
+                pn.PhoneName = phone.PhoneName;
+                pn.MainImage = phone.MainImage;
+                pn.ScreenTeachnology = phone.ScreenTeachnology;
+                pn.PhysicalWidth = phone.PhysicalWidth;
+                pn.PhysicalHeight = phone.PhysicalHeight;
+                pn.ScreenDiagonal = phone.ScreenDiagonal;
+                pn.Chip = phone.Chip;
+                pn.OperatingSystem = phone.OperatingSystem;
+                pn.Sim = phone.Sim;
+                pn.Wifi = phone.Wifi;
+                pn.Bluetooth = phone.Bluetooth;
+                pn.BatteryCapacity = phone.BatteryCapacity;
+                pn.TypeOfPin = phone.TypeOfPin;
+                pn.BrandID = phone.BrandID;
+                db.SubmitChanges();
+            }
+        }
+
         public void xoaPhone(string id)
         {
             PHONE existSP = db.PHONEs.Where(k => k.PhoneID.Equals(id)).FirstOrDefault();
