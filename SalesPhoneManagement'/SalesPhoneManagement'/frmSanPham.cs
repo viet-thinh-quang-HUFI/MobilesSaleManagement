@@ -19,6 +19,7 @@ namespace SalesPhoneManagement_
         BrandDAL brandDAL = new BrandDAL();
         CommentDAL commentDAL = new CommentDAL();
         DetailsPhoneDAL detailsPhoneDAL = new DetailsPhoneDAL();
+        int idCount = 15;
         public frmSanPham()
         {
             InitializeComponent();
@@ -30,10 +31,153 @@ namespace SalesPhoneManagement_
             dgvSanPham.Columns["PhysicalHeight"].Visible = false;
             dgvSanPham.Columns["Brand"].Visible = false;
         }
+
+        public void load_cbo_CongNghe()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.ScreenTeachnology);
+            }
+
+            cbScreen.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbScreen.Items.Add(uniqueItem);
+            }
+
+        }
+        public void load_cbo_HieuNang()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.Chip);
+            }
+
+            cbHieuNang.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbHieuNang.Items.Add(uniqueItem);
+            }
+
+        }
+        public void load_cbo_Sim()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.Sim);
+            }
+
+            cbSim.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbSim.Items.Add(uniqueItem);
+            }
+
+        }
         private void load_cbo_LoaiPin()
         {
-            var data = loaipin.ToArray();
-            cbLoaiPin.DataSource = data;
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.TypeOfPin);
+            }
+
+            cbLoaiPin.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbLoaiPin.Items.Add(uniqueItem);
+            }
+        }
+        private void load_cbo_HDH()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.OperatingSystem);
+            }
+
+            cbHDH.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbHDH.Items.Add(uniqueItem);
+            }
+        }
+        private void load_cbo_KT()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<decimal>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.ScreenDiagonal.Value);
+            }
+
+            cbMCheo.Items.Clear();
+
+            foreach (decimal uniqueItem in uniqueValues)
+            {
+                cbMCheo.Items.Add(uniqueItem);
+            }
+        }
+        private void load_cbo_WF()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.Wifi);
+            }
+
+            cbWF.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbWF.Items.Add(uniqueItem);
+            }
+        }
+        private void load_cbo_BLT()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<string>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.Bluetooth);
+            }
+
+            cbBLT.Items.Clear();
+
+            foreach (string uniqueItem in uniqueValues)
+            {
+                cbBLT.Items.Add(uniqueItem);
+            }
+        }
+        private void load_cbo_DLP()
+        {
+            var originalData = phoneDAL.loadDaTaSP();
+            var uniqueValues = new HashSet<int>();
+            foreach (var item in originalData)
+            {
+                uniqueValues.Add(item.BatteryCapacity.Value);
+            }
+
+            cbDLPin.Items.Clear();
+
+            foreach (int uniqueItem in uniqueValues)
+            {
+                cbDLPin.Items.Add(uniqueItem);
+            }
         }
         private void load_Cb_Hang()
         {
@@ -46,6 +190,14 @@ namespace SalesPhoneManagement_
             loadData_SP();
             load_Cb_Hang();
             load_cbo_LoaiPin();
+            load_cbo_CongNghe();
+            load_cbo_HieuNang();
+            load_cbo_Sim();
+            load_cbo_HDH();
+            load_cbo_KT();
+            load_cbo_DLP();
+            load_cbo_WF();
+            load_cbo_BLT();
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -53,23 +205,26 @@ namespace SalesPhoneManagement_
             txtMa.Text = dgvSanPham.CurrentRow.Cells["PhoneID"].Value.ToString();
             txtTen.Text = dgvSanPham.CurrentRow.Cells["PhoneName"].Value.ToString();
             txtAnh.Text = dgvSanPham.CurrentRow.Cells["MainImage"].Value.ToString();
-            txtScreen.Text = dgvSanPham.CurrentRow.Cells["ScreenTeachnology"].Value.ToString();
+            cbScreen.Text = dgvSanPham.CurrentRow.Cells["ScreenTeachnology"].Value.ToString();
             txtWidth.Text = dgvSanPham.CurrentRow.Cells["PhysicalWidth"].Value.ToString();
             txtHeight.Text = dgvSanPham.CurrentRow.Cells["PhysicalHeight"].Value.ToString();
-            txtMCheo.Text = dgvSanPham.CurrentRow.Cells["ScreenDiagonal"].Value.ToString();
-            txtHieuNang.Text = dgvSanPham.CurrentRow.Cells["Chip"].Value.ToString();
-            txtHDH.Text = dgvSanPham.CurrentRow.Cells["OperatingSystem"].Value.ToString();
-            txtSim.Text = dgvSanPham.CurrentRow.Cells["Sim"].Value.ToString();
-            txtWF.Text = dgvSanPham.CurrentRow.Cells["Wifi"].Value.ToString();
-            txtBLT.Text = dgvSanPham.CurrentRow.Cells["Bluetooth"].Value.ToString();
-            txtDLPin.Text = dgvSanPham.CurrentRow.Cells["BatteryCapacity"].Value.ToString();
+            cbMCheo.Text = dgvSanPham.CurrentRow.Cells["ScreenDiagonal"].Value.ToString();
+            cbHieuNang.Text = dgvSanPham.CurrentRow.Cells["Chip"].Value.ToString();
+            cbHDH.Text = dgvSanPham.CurrentRow.Cells["OperatingSystem"].Value.ToString();
+            cbSim.Text = dgvSanPham.CurrentRow.Cells["Sim"].Value.ToString();
+            cbWF.Text = dgvSanPham.CurrentRow.Cells["Wifi"].Value.ToString();
+            cbBLT.Text = dgvSanPham.CurrentRow.Cells["Bluetooth"].Value.ToString();
+            cbDLPin.Text = dgvSanPham.CurrentRow.Cells["BatteryCapacity"].Value.ToString();
             cbLoaiPin.Text = dgvSanPham.CurrentRow.Cells["TypeOfPin"].Value.ToString();
             cbHang.Text = dgvSanPham.CurrentRow.Cells["BrandID"].Value.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (txtMa.Text == "" || txtTen.Text == "" || txtAnh.Text == "" || txtScreen.Text=="" || txtWidth.Text==""|| txtHeight.Text==""|| txtMCheo.Text==""|| txtHieuNang.Text==""|| txtHDH.Text==""|| txtSim.Text=="" || txtWF.Text==""|| txtBLT.Text==""|| txtDLPin.Text=="")
+            string productID = "PH" + idCount.ToString("D");
+            idCount++;
+            txtMa.Text = productID;
+            if (txtMa.Text == "" || txtTen.Text == "" || txtAnh.Text == "" || cbScreen.Text=="" || txtWidth.Text==""|| txtHeight.Text==""|| cbMCheo.Text==""|| cbHieuNang.Text==""|| cbHDH.Text==""|| cbSim.Text=="" || cbWF.Text==""|| cbBLT.Text==""|| cbDLPin.Text=="")
             {
                 MessageBox.Show("Bạn chưa nhập đủ thông tin!");
                 return;
@@ -87,17 +242,17 @@ namespace SalesPhoneManagement_
                 sp.PhoneID = txtMa.Text;
                 sp.PhoneName = txtTen.Text;
                 sp.MainImage = txtAnh.Text;
-                sp.ScreenTeachnology = txtScreen.Text;
+                sp.ScreenTeachnology = cbScreen.Text;
                 sp.PhysicalWidth = Int32.Parse(txtWidth.Text);
                 sp.PhysicalHeight = Int32.Parse(txtHeight.Text);
-                sp.ScreenDiagonal = Decimal.Parse(txtMCheo.Text);
-                sp.Chip = txtHieuNang.Text;
-                sp.OperatingSystem = txtHDH.Text;
-                sp.Sim = txtSim.Text;
-                sp.Wifi = txtWF.Text;
-                sp.Bluetooth = txtBLT.Text;
-                sp.BatteryCapacity = Int32.Parse(txtDLPin.Text);
-                sp.TypeOfPin = cbLoaiPin.SelectedValue.ToString();
+                sp.ScreenDiagonal = Decimal.Parse(cbMCheo.Text);
+                sp.Chip = cbHieuNang.Text;
+                sp.OperatingSystem = cbHDH.Text;
+                sp.Sim = cbSim.Text;
+                sp.Wifi = cbWF.Text;
+                sp.Bluetooth = cbBLT.Text;
+                sp.BatteryCapacity = Int32.Parse(cbDLPin.Text);
+                sp.TypeOfPin = cbLoaiPin.Text;
                 sp.BrandID = cbHang.SelectedValue.ToString();
                 phoneDAL.themSanPham(sp);
                 loadData_SP();
@@ -127,6 +282,53 @@ namespace SalesPhoneManagement_
                     phoneDAL.xoaPhone(txtMa.Text);
                     loadData_SP();
                 }
+            }
+        }
+
+        private void cbHang_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmBrand hang = new frmBrand();
+            hang.ShowDialog();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMa.Text == "" || txtTen.Text == "" || txtAnh.Text == "" || cbScreen.Text == "" || txtWidth.Text == "" || txtHeight.Text == "" || cbMCheo.Text == "" || cbHieuNang.Text == "" || cbHDH.Text == "" || cbSim.Text == "" || cbWF.Text == "" || cbBLT.Text == "" || cbDLPin.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập đủ thông tin!");
+                return;
+            }
+
+            if (txtMa.Text == null)
+            {
+                MessageBox.Show("Bạn chưa nhập mã sản phẩm!");
+                return;
+            }
+            else
+            {
+                PHONE sp = new PHONE();
+                sp.PhoneID = txtMa.Text;
+                sp.PhoneName = txtTen.Text;
+                sp.MainImage = txtAnh.Text;
+                sp.ScreenTeachnology = cbScreen.Text;
+                sp.PhysicalWidth = Int32.Parse(txtWidth.Text);
+                sp.PhysicalHeight = Int32.Parse(txtHeight.Text);
+                sp.ScreenDiagonal = Decimal.Parse(cbMCheo.Text);
+                sp.Chip = cbHieuNang.Text;
+                sp.OperatingSystem = cbHDH.Text;
+                sp.Sim = cbSim.Text;
+                sp.Wifi = cbWF.Text;
+                sp.Bluetooth = cbBLT.Text;
+                sp.BatteryCapacity = Int32.Parse(cbDLPin.Text);
+                sp.TypeOfPin = cbLoaiPin.Text;
+                sp.BrandID = cbHang.SelectedValue.ToString();
+                phoneDAL.suaPhone(sp);
+                loadData_SP();
             }
         }
     }
