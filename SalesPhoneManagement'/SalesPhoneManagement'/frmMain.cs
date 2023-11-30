@@ -29,8 +29,8 @@ namespace SalesPhoneManagement_
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            //frmLogin login = new frmLogin();
-            //login.ShowDialog();
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -102,7 +102,18 @@ namespace SalesPhoneManagement_
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new frmSanPham());
+            OpenChildForm(new frmChiTietDT());
+
+            //if (frmLogin.isadmin == "Kho")
+            //{
+            //    ActivateButton(sender, RGBColors.color1);
+            //    OpenChildForm(new frmSanPham());
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Bạn không phải nhân viên kho , đừng làm khổ chính mình!", "Mobile Sales Management", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //}
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -129,5 +140,19 @@ namespace SalesPhoneManagement_
             ReleaseCapture();
         }
 
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new frmKhachHang());
+            //if (frmLogin.isadmin == "CSKH")
+            //{
+            //    ActivateButton(sender, RGBColors.color1);
+            //    OpenChildForm(new frmKhachHang());
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Bạn không phải nhân viên CSKH , đừng làm khổ chính mình!", "Mobile Sales Management", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //}
+        }
     }
 }

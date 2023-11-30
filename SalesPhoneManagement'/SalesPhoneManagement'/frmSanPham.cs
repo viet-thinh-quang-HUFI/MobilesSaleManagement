@@ -15,7 +15,7 @@ namespace SalesPhoneManagement_
 {
     public partial class frmSanPham : Form
     {
-        PhoneDAL phoneDAL = new PhoneDAL(); 
+        PhoneDAL phoneDAL = new PhoneDAL();
         BrandDAL brandDAL = new BrandDAL();
         CommentDAL commentDAL = new CommentDAL();
         DetailsPhoneDAL detailsPhoneDAL = new DetailsPhoneDAL();
@@ -215,7 +215,13 @@ namespace SalesPhoneManagement_
             cbBLT.Text = dgvSanPham.CurrentRow.Cells["Bluetooth"].Value.ToString();
             cbDLPin.Text = dgvSanPham.CurrentRow.Cells["BatteryCapacity"].Value.ToString();
             cbLoaiPin.Text = dgvSanPham.CurrentRow.Cells["TypeOfPin"].Value.ToString();
-            cbHang.Text = dgvSanPham.CurrentRow.Cells["BrandID"].Value.ToString();
+            foreach (BRAND item in cbHang.Items)
+            {
+                if (item.BrandID == dgvSanPham.CurrentRow.Cells["BrandID"].Value.ToString())
+                {
+                    cbHang.Text = item.BrandName;
+                }
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -223,7 +229,7 @@ namespace SalesPhoneManagement_
             string productID = "PH" + idCount.ToString("D");
             idCount++;
             txtMa.Text = productID;
-            if (txtMa.Text == "" || txtTen.Text == "" || txtAnh.Text == "" || cbScreen.Text=="" || txtWidth.Text==""|| txtHeight.Text==""|| cbMCheo.Text==""|| cbHieuNang.Text==""|| cbHDH.Text==""|| cbSim.Text=="" || cbWF.Text==""|| cbBLT.Text==""|| cbDLPin.Text=="")
+            if (txtMa.Text == "" || txtTen.Text == "" || txtAnh.Text == "" || cbScreen.Text == "" || txtWidth.Text == "" || txtHeight.Text == "" || cbMCheo.Text == "" || cbHieuNang.Text == "" || cbHDH.Text == "" || cbSim.Text == "" || cbWF.Text == "" || cbBLT.Text == "" || cbDLPin.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập đủ thông tin!");
                 return;
@@ -270,8 +276,8 @@ namespace SalesPhoneManagement_
             else
             {
                 bool sp = commentDAL.existsComment_PhoneID(txtMa.Text);
-                bool sp1 = detailsPhoneDAL.existsDetail_PhoneID(txtMa.Text);  
-                if (sp == true || sp1 ==true)
+                bool sp1 = detailsPhoneDAL.existsDetail_PhoneID(txtMa.Text);
+                if (sp == true || sp1 == true)
                 {
                     MessageBox.Show("Không thể xóa sản phẩm này!");
                     return;

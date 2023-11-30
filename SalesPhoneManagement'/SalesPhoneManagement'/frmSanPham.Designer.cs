@@ -28,14 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.cbDLPin = new Library.CheckCboNumber();
+            this.txtHeight = new Library.CheckNumber();
+            this.txtWidth = new Library.CheckNumber();
+            this.cbMCheo = new Library.ComboBoxText();
+            this.cbSim = new Library.ComboBoxText();
+            this.cbHDH = new Library.ComboBoxText();
+            this.cbBLT = new Library.ComboBoxText();
+            this.cbWF = new Library.ComboBoxText();
+            this.cbHieuNang = new Library.ComboBoxText();
+            this.cbScreen = new Library.ComboBoxText();
+            this.cbLoaiPin = new System.Windows.Forms.ComboBox();
+            this.cbHang = new System.Windows.Forms.ComboBox();
             this.btnSua = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
             this.txtAnh = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtMa = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
             this.PhoneID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,40 +84,164 @@
             this.TypeOfPin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BrandID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cbLoaiPin = new System.Windows.Forms.ComboBox();
-            this.cbHang = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtMa = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cbDLPin = new Library.CheckCboNumber();
-            this.txtHeight = new Library.CheckNumber();
-            this.txtWidth = new Library.CheckNumber();
-            this.cbMCheo = new Library.ComboBoxText();
-            this.cbSim = new Library.ComboBoxText();
-            this.cbHDH = new Library.ComboBoxText();
-            this.cbHieuNang = new Library.ComboBoxText();
-            this.cbScreen = new Library.ComboBoxText();
-            this.cbWF = new Library.ComboBoxText();
-            this.cbBLT = new Library.ComboBoxText();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Add;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(1763, 238);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(44, 34);
+            this.iconButton1.TabIndex = 60;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // cbDLPin
+            // 
+            this.cbDLPin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbDLPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDLPin.FormattingEnabled = true;
+            this.cbDLPin.Location = new System.Drawing.Point(1492, 151);
+            this.cbDLPin.Name = "cbDLPin";
+            this.cbDLPin.Size = new System.Drawing.Size(250, 30);
+            this.cbDLPin.TabIndex = 44;
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeight.Location = new System.Drawing.Point(962, 106);
+            this.txtHeight.Multiline = true;
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(250, 30);
+            this.txtHeight.TabIndex = 43;
+            // 
+            // txtWidth
+            // 
+            this.txtWidth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWidth.Location = new System.Drawing.Point(962, 63);
+            this.txtWidth.Multiline = true;
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(250, 30);
+            this.txtWidth.TabIndex = 43;
+            // 
+            // cbMCheo
+            // 
+            this.cbMCheo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbMCheo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbMCheo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbMCheo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMCheo.FormattingEnabled = true;
+            this.cbMCheo.ItemHeight = 22;
+            this.cbMCheo.Location = new System.Drawing.Point(461, 238);
+            this.cbMCheo.Name = "cbMCheo";
+            this.cbMCheo.Size = new System.Drawing.Size(250, 30);
+            this.cbMCheo.TabIndex = 42;
+            // 
+            // cbSim
+            // 
+            this.cbSim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbSim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbSim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSim.FormattingEnabled = true;
+            this.cbSim.ItemHeight = 22;
+            this.cbSim.Location = new System.Drawing.Point(962, 237);
+            this.cbSim.Name = "cbSim";
+            this.cbSim.Size = new System.Drawing.Size(250, 30);
+            this.cbSim.TabIndex = 42;
+            // 
+            // cbHDH
+            // 
+            this.cbHDH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbHDH.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbHDH.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbHDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHDH.FormattingEnabled = true;
+            this.cbHDH.ItemHeight = 22;
+            this.cbHDH.Location = new System.Drawing.Point(962, 195);
+            this.cbHDH.Name = "cbHDH";
+            this.cbHDH.Size = new System.Drawing.Size(250, 30);
+            this.cbHDH.TabIndex = 42;
+            // 
+            // cbBLT
+            // 
+            this.cbBLT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbBLT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbBLT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbBLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBLT.FormattingEnabled = true;
+            this.cbBLT.ItemHeight = 22;
+            this.cbBLT.Location = new System.Drawing.Point(1492, 106);
+            this.cbBLT.Name = "cbBLT";
+            this.cbBLT.Size = new System.Drawing.Size(250, 30);
+            this.cbBLT.TabIndex = 42;
+            // 
+            // cbWF
+            // 
+            this.cbWF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbWF.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbWF.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbWF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbWF.FormattingEnabled = true;
+            this.cbWF.ItemHeight = 22;
+            this.cbWF.Location = new System.Drawing.Point(1492, 62);
+            this.cbWF.Name = "cbWF";
+            this.cbWF.Size = new System.Drawing.Size(250, 30);
+            this.cbWF.TabIndex = 42;
+            // 
+            // cbHieuNang
+            // 
+            this.cbHieuNang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbHieuNang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbHieuNang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbHieuNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHieuNang.FormattingEnabled = true;
+            this.cbHieuNang.ItemHeight = 22;
+            this.cbHieuNang.Location = new System.Drawing.Point(962, 151);
+            this.cbHieuNang.Name = "cbHieuNang";
+            this.cbHieuNang.Size = new System.Drawing.Size(250, 30);
+            this.cbHieuNang.TabIndex = 42;
+            // 
+            // cbScreen
+            // 
+            this.cbScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbScreen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbScreen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbScreen.FormattingEnabled = true;
+            this.cbScreen.ItemHeight = 22;
+            this.cbScreen.Location = new System.Drawing.Point(461, 195);
+            this.cbScreen.Name = "cbScreen";
+            this.cbScreen.Size = new System.Drawing.Size(250, 30);
+            this.cbScreen.TabIndex = 42;
+            // 
+            // cbLoaiPin
+            // 
+            this.cbLoaiPin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbLoaiPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoaiPin.FormattingEnabled = true;
+            this.cbLoaiPin.Location = new System.Drawing.Point(1492, 193);
+            this.cbLoaiPin.Name = "cbLoaiPin";
+            this.cbLoaiPin.Size = new System.Drawing.Size(250, 33);
+            this.cbLoaiPin.TabIndex = 42;
+            // 
+            // cbHang
+            // 
+            this.cbHang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHang.FormattingEnabled = true;
+            this.cbHang.Location = new System.Drawing.Point(1492, 238);
+            this.cbHang.Name = "cbHang";
+            this.cbHang.Size = new System.Drawing.Size(250, 33);
+            this.cbHang.TabIndex = 42;
             // 
             // btnSua
             // 
@@ -151,290 +305,6 @@
             this.txtAnh.Size = new System.Drawing.Size(250, 30);
             this.txtAnh.TabIndex = 33;
             // 
-            // txtTen
-            // 
-            this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(461, 110);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTen.Multiline = true;
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(250, 30);
-            this.txtTen.TabIndex = 32;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.dgvSanPham, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.60274F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.39726F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1924, 1055);
-            this.tableLayoutPanel1.TabIndex = 11;
-            // 
-            // dgvSanPham
-            // 
-            this.dgvSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
-            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PhoneID,
-            this.PhoneName,
-            this.MainImage,
-            this.ScreenTeachnology,
-            this.PhysicalHeight,
-            this.PhysicalWidth,
-            this.ScreenDiagonal,
-            this.Chip,
-            this.OperatingSystem,
-            this.Sim,
-            this.Wifi,
-            this.Bluetooth,
-            this.BatteryCapacity,
-            this.TypeOfPin,
-            this.BrandID});
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle26;
-            this.dgvSanPham.Location = new System.Drawing.Point(4, 527);
-            this.dgvSanPham.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvSanPham.Name = "dgvSanPham";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
-            this.dgvSanPham.RowHeadersWidth = 51;
-            this.dgvSanPham.Size = new System.Drawing.Size(1916, 524);
-            this.dgvSanPham.TabIndex = 24;
-            this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
-            // 
-            // PhoneID
-            // 
-            this.PhoneID.DataPropertyName = "PhoneID";
-            this.PhoneID.HeaderText = "Mã sản phẩm";
-            this.PhoneID.MinimumWidth = 6;
-            this.PhoneID.Name = "PhoneID";
-            // 
-            // PhoneName
-            // 
-            this.PhoneName.DataPropertyName = "PhoneName";
-            this.PhoneName.HeaderText = "Tên sản phẩm";
-            this.PhoneName.MinimumWidth = 6;
-            this.PhoneName.Name = "PhoneName";
-            // 
-            // MainImage
-            // 
-            this.MainImage.DataPropertyName = "MainImage";
-            this.MainImage.HeaderText = "Đường dẫn hình";
-            this.MainImage.MinimumWidth = 6;
-            this.MainImage.Name = "MainImage";
-            // 
-            // ScreenTeachnology
-            // 
-            this.ScreenTeachnology.DataPropertyName = "ScreenTeachnology";
-            this.ScreenTeachnology.HeaderText = "Công nghệ màn hình";
-            this.ScreenTeachnology.MinimumWidth = 6;
-            this.ScreenTeachnology.Name = "ScreenTeachnology";
-            // 
-            // PhysicalHeight
-            // 
-            this.PhysicalHeight.DataPropertyName = "PhysicalHeight";
-            this.PhysicalHeight.HeaderText = "Chiều dài";
-            this.PhysicalHeight.MinimumWidth = 6;
-            this.PhysicalHeight.Name = "PhysicalHeight";
-            // 
-            // PhysicalWidth
-            // 
-            this.PhysicalWidth.DataPropertyName = "PhysicalWidth";
-            this.PhysicalWidth.HeaderText = "Chiều rộng";
-            this.PhysicalWidth.MinimumWidth = 6;
-            this.PhysicalWidth.Name = "PhysicalWidth";
-            // 
-            // ScreenDiagonal
-            // 
-            this.ScreenDiagonal.DataPropertyName = "ScreenDiagonal";
-            this.ScreenDiagonal.HeaderText = "Kích thước màn hình";
-            this.ScreenDiagonal.MinimumWidth = 6;
-            this.ScreenDiagonal.Name = "ScreenDiagonal";
-            // 
-            // Chip
-            // 
-            this.Chip.DataPropertyName = "Chip";
-            this.Chip.HeaderText = "Hiệu năng";
-            this.Chip.MinimumWidth = 6;
-            this.Chip.Name = "Chip";
-            // 
-            // OperatingSystem
-            // 
-            this.OperatingSystem.DataPropertyName = "OperatingSystem";
-            this.OperatingSystem.HeaderText = "Hệ điều hành";
-            this.OperatingSystem.MinimumWidth = 6;
-            this.OperatingSystem.Name = "OperatingSystem";
-            // 
-            // Sim
-            // 
-            this.Sim.DataPropertyName = "Sim";
-            this.Sim.HeaderText = "Sim";
-            this.Sim.MinimumWidth = 6;
-            this.Sim.Name = "Sim";
-            // 
-            // Wifi
-            // 
-            this.Wifi.DataPropertyName = "Wifi";
-            this.Wifi.HeaderText = "Wifi";
-            this.Wifi.MinimumWidth = 6;
-            this.Wifi.Name = "Wifi";
-            // 
-            // Bluetooth
-            // 
-            this.Bluetooth.DataPropertyName = "Bluetooth";
-            this.Bluetooth.HeaderText = "Bluetooth";
-            this.Bluetooth.MinimumWidth = 6;
-            this.Bluetooth.Name = "Bluetooth";
-            // 
-            // BatteryCapacity
-            // 
-            this.BatteryCapacity.DataPropertyName = "BatteryCapacity";
-            this.BatteryCapacity.HeaderText = "Dung lượng pin";
-            this.BatteryCapacity.MinimumWidth = 6;
-            this.BatteryCapacity.Name = "BatteryCapacity";
-            // 
-            // TypeOfPin
-            // 
-            this.TypeOfPin.DataPropertyName = "TypeOfPin";
-            this.TypeOfPin.HeaderText = "Loại pin";
-            this.TypeOfPin.MinimumWidth = 6;
-            this.TypeOfPin.Name = "TypeOfPin";
-            // 
-            // BrandID
-            // 
-            this.BrandID.DataPropertyName = "BrandID";
-            this.BrandID.HeaderText = "Hãng";
-            this.BrandID.MinimumWidth = 6;
-            this.BrandID.Name = "BrandID";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1918, 37);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "QUẢN LÝ SẢN PHẨM";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.cbDLPin);
-            this.panel1.Controls.Add(this.txtHeight);
-            this.panel1.Controls.Add(this.txtWidth);
-            this.panel1.Controls.Add(this.cbMCheo);
-            this.panel1.Controls.Add(this.cbSim);
-            this.panel1.Controls.Add(this.cbHDH);
-            this.panel1.Controls.Add(this.cbBLT);
-            this.panel1.Controls.Add(this.cbWF);
-            this.panel1.Controls.Add(this.cbHieuNang);
-            this.panel1.Controls.Add(this.cbScreen);
-            this.panel1.Controls.Add(this.cbLoaiPin);
-            this.panel1.Controls.Add(this.cbHang);
-            this.panel1.Controls.Add(this.btnSua);
-            this.panel1.Controls.Add(this.btnXoa);
-            this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.txtAnh);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.txtTen);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.txtMa);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 69);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1918, 451);
-            this.panel1.TabIndex = 7;
-            // 
-            // cbLoaiPin
-            // 
-            this.cbLoaiPin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbLoaiPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbLoaiPin.FormattingEnabled = true;
-            this.cbLoaiPin.Location = new System.Drawing.Point(1492, 193);
-            this.cbLoaiPin.Name = "cbLoaiPin";
-            this.cbLoaiPin.Size = new System.Drawing.Size(250, 33);
-            this.cbLoaiPin.TabIndex = 42;
-            // 
-            // cbHang
-            // 
-            this.cbHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHang.FormattingEnabled = true;
-            this.cbHang.Location = new System.Drawing.Point(1492, 238);
-            this.cbHang.Name = "cbHang";
-            this.cbHang.Size = new System.Drawing.Size(250, 33);
-            this.cbHang.TabIndex = 42;
-            this.cbHang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbHang_KeyDown);
-            // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -447,6 +317,17 @@
             this.label16.Size = new System.Drawing.Size(62, 23);
             this.label16.TabIndex = 29;
             this.label16.Text = "Hãng";
+            // 
+            // txtTen
+            // 
+            this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTen.Location = new System.Drawing.Point(461, 110);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTen.Multiline = true;
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(250, 30);
+            this.txtTen.TabIndex = 32;
             // 
             // label11
             // 
@@ -642,139 +523,257 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "Mã sản phẩm";
             // 
-            // cbDLPin
+            // panel1
             // 
-            this.cbDLPin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbDLPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDLPin.FormattingEnabled = true;
-            this.cbDLPin.Location = new System.Drawing.Point(1492, 151);
-            this.cbDLPin.Name = "cbDLPin";
-            this.cbDLPin.Size = new System.Drawing.Size(250, 30);
-            this.cbDLPin.TabIndex = 44;
+            this.panel1.AutoSize = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.cbDLPin);
+            this.panel1.Controls.Add(this.txtHeight);
+            this.panel1.Controls.Add(this.txtWidth);
+            this.panel1.Controls.Add(this.cbMCheo);
+            this.panel1.Controls.Add(this.cbSim);
+            this.panel1.Controls.Add(this.cbHDH);
+            this.panel1.Controls.Add(this.cbBLT);
+            this.panel1.Controls.Add(this.cbWF);
+            this.panel1.Controls.Add(this.cbHieuNang);
+            this.panel1.Controls.Add(this.cbScreen);
+            this.panel1.Controls.Add(this.cbLoaiPin);
+            this.panel1.Controls.Add(this.cbHang);
+            this.panel1.Controls.Add(this.btnSua);
+            this.panel1.Controls.Add(this.btnXoa);
+            this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.txtAnh);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.txtTen);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.txtMa);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 69);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1918, 451);
+            this.panel1.TabIndex = 7;
             // 
-            // txtHeight
+            // tableLayoutPanel1
             // 
-            this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight.Location = new System.Drawing.Point(962, 106);
-            this.txtHeight.Multiline = true;
-            this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(250, 30);
-            this.txtHeight.TabIndex = 43;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.dgvSanPham, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.60274F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.39726F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 531F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1924, 1055);
+            this.tableLayoutPanel1.TabIndex = 12;
             // 
-            // txtWidth
+            // dgvSanPham
             // 
-            this.txtWidth.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWidth.Location = new System.Drawing.Point(962, 63);
-            this.txtWidth.Multiline = true;
-            this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(250, 30);
-            this.txtWidth.TabIndex = 43;
+            this.dgvSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PhoneID,
+            this.PhoneName,
+            this.MainImage,
+            this.ScreenTeachnology,
+            this.PhysicalHeight,
+            this.PhysicalWidth,
+            this.ScreenDiagonal,
+            this.Chip,
+            this.OperatingSystem,
+            this.Sim,
+            this.Wifi,
+            this.Bluetooth,
+            this.BatteryCapacity,
+            this.TypeOfPin,
+            this.BrandID});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSanPham.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSanPham.Location = new System.Drawing.Point(4, 527);
+            this.dgvSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSanPham.Name = "dgvSanPham";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvSanPham.RowHeadersWidth = 51;
+            this.dgvSanPham.Size = new System.Drawing.Size(1916, 524);
+            this.dgvSanPham.TabIndex = 24;
+            this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
             // 
-            // cbMCheo
+            // PhoneID
             // 
-            this.cbMCheo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbMCheo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbMCheo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbMCheo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMCheo.FormattingEnabled = true;
-            this.cbMCheo.ItemHeight = 22;
-            this.cbMCheo.Location = new System.Drawing.Point(461, 238);
-            this.cbMCheo.Name = "cbMCheo";
-            this.cbMCheo.Size = new System.Drawing.Size(250, 30);
-            this.cbMCheo.TabIndex = 42;
+            this.PhoneID.DataPropertyName = "PhoneID";
+            this.PhoneID.HeaderText = "Mã sản phẩm";
+            this.PhoneID.MinimumWidth = 6;
+            this.PhoneID.Name = "PhoneID";
             // 
-            // cbSim
+            // PhoneName
             // 
-            this.cbSim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbSim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbSim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSim.FormattingEnabled = true;
-            this.cbSim.ItemHeight = 22;
-            this.cbSim.Location = new System.Drawing.Point(962, 237);
-            this.cbSim.Name = "cbSim";
-            this.cbSim.Size = new System.Drawing.Size(250, 30);
-            this.cbSim.TabIndex = 42;
+            this.PhoneName.DataPropertyName = "PhoneName";
+            this.PhoneName.HeaderText = "Tên sản phẩm";
+            this.PhoneName.MinimumWidth = 6;
+            this.PhoneName.Name = "PhoneName";
             // 
-            // cbHDH
+            // MainImage
             // 
-            this.cbHDH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbHDH.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbHDH.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbHDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHDH.FormattingEnabled = true;
-            this.cbHDH.ItemHeight = 22;
-            this.cbHDH.Location = new System.Drawing.Point(962, 195);
-            this.cbHDH.Name = "cbHDH";
-            this.cbHDH.Size = new System.Drawing.Size(250, 30);
-            this.cbHDH.TabIndex = 42;
+            this.MainImage.DataPropertyName = "MainImage";
+            this.MainImage.HeaderText = "Đường dẫn hình";
+            this.MainImage.MinimumWidth = 6;
+            this.MainImage.Name = "MainImage";
             // 
-            // cbHieuNang
+            // ScreenTeachnology
             // 
-            this.cbHieuNang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbHieuNang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbHieuNang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbHieuNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHieuNang.FormattingEnabled = true;
-            this.cbHieuNang.ItemHeight = 22;
-            this.cbHieuNang.Location = new System.Drawing.Point(962, 151);
-            this.cbHieuNang.Name = "cbHieuNang";
-            this.cbHieuNang.Size = new System.Drawing.Size(250, 30);
-            this.cbHieuNang.TabIndex = 42;
+            this.ScreenTeachnology.DataPropertyName = "ScreenTeachnology";
+            this.ScreenTeachnology.HeaderText = "Công nghệ màn hình";
+            this.ScreenTeachnology.MinimumWidth = 6;
+            this.ScreenTeachnology.Name = "ScreenTeachnology";
             // 
-            // cbScreen
+            // PhysicalHeight
             // 
-            this.cbScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbScreen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbScreen.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbScreen.FormattingEnabled = true;
-            this.cbScreen.ItemHeight = 22;
-            this.cbScreen.Location = new System.Drawing.Point(461, 195);
-            this.cbScreen.Name = "cbScreen";
-            this.cbScreen.Size = new System.Drawing.Size(250, 30);
-            this.cbScreen.TabIndex = 42;
+            this.PhysicalHeight.DataPropertyName = "PhysicalHeight";
+            this.PhysicalHeight.HeaderText = "Chiều dài";
+            this.PhysicalHeight.MinimumWidth = 6;
+            this.PhysicalHeight.Name = "PhysicalHeight";
             // 
-            // cbWF
+            // PhysicalWidth
             // 
-            this.cbWF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbWF.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbWF.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbWF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbWF.FormattingEnabled = true;
-            this.cbWF.ItemHeight = 22;
-            this.cbWF.Location = new System.Drawing.Point(1492, 62);
-            this.cbWF.Name = "cbWF";
-            this.cbWF.Size = new System.Drawing.Size(250, 30);
-            this.cbWF.TabIndex = 42;
+            this.PhysicalWidth.DataPropertyName = "PhysicalWidth";
+            this.PhysicalWidth.HeaderText = "Chiều rộng";
+            this.PhysicalWidth.MinimumWidth = 6;
+            this.PhysicalWidth.Name = "PhysicalWidth";
             // 
-            // cbBLT
+            // ScreenDiagonal
             // 
-            this.cbBLT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbBLT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbBLT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbBLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBLT.FormattingEnabled = true;
-            this.cbBLT.ItemHeight = 22;
-            this.cbBLT.Location = new System.Drawing.Point(1492, 106);
-            this.cbBLT.Name = "cbBLT";
-            this.cbBLT.Size = new System.Drawing.Size(250, 30);
-            this.cbBLT.TabIndex = 42;
+            this.ScreenDiagonal.DataPropertyName = "ScreenDiagonal";
+            this.ScreenDiagonal.HeaderText = "Kích thước màn hình";
+            this.ScreenDiagonal.MinimumWidth = 6;
+            this.ScreenDiagonal.Name = "ScreenDiagonal";
             // 
-            // iconButton1
+            // Chip
             // 
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Add;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(1763, 238);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(44, 34);
-            this.iconButton1.TabIndex = 60;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.Chip.DataPropertyName = "Chip";
+            this.Chip.HeaderText = "Hiệu năng";
+            this.Chip.MinimumWidth = 6;
+            this.Chip.Name = "Chip";
+            // 
+            // OperatingSystem
+            // 
+            this.OperatingSystem.DataPropertyName = "OperatingSystem";
+            this.OperatingSystem.HeaderText = "Hệ điều hành";
+            this.OperatingSystem.MinimumWidth = 6;
+            this.OperatingSystem.Name = "OperatingSystem";
+            // 
+            // Sim
+            // 
+            this.Sim.DataPropertyName = "Sim";
+            this.Sim.HeaderText = "Sim";
+            this.Sim.MinimumWidth = 6;
+            this.Sim.Name = "Sim";
+            // 
+            // Wifi
+            // 
+            this.Wifi.DataPropertyName = "Wifi";
+            this.Wifi.HeaderText = "Wifi";
+            this.Wifi.MinimumWidth = 6;
+            this.Wifi.Name = "Wifi";
+            // 
+            // Bluetooth
+            // 
+            this.Bluetooth.DataPropertyName = "Bluetooth";
+            this.Bluetooth.HeaderText = "Bluetooth";
+            this.Bluetooth.MinimumWidth = 6;
+            this.Bluetooth.Name = "Bluetooth";
+            // 
+            // BatteryCapacity
+            // 
+            this.BatteryCapacity.DataPropertyName = "BatteryCapacity";
+            this.BatteryCapacity.HeaderText = "Dung lượng pin";
+            this.BatteryCapacity.MinimumWidth = 6;
+            this.BatteryCapacity.Name = "BatteryCapacity";
+            // 
+            // TypeOfPin
+            // 
+            this.TypeOfPin.DataPropertyName = "TypeOfPin";
+            this.TypeOfPin.HeaderText = "Loại pin";
+            this.TypeOfPin.MinimumWidth = 6;
+            this.TypeOfPin.Name = "TypeOfPin";
+            // 
+            // BrandID
+            // 
+            this.BrandID.DataPropertyName = "BrandID";
+            this.BrandID.HeaderText = "Hãng";
+            this.BrandID.MinimumWidth = 6;
+            this.BrandID.Name = "BrandID";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1918, 37);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "QUẢN LÝ SẢN PHẨM";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmSanPham
             // 
@@ -785,44 +784,54 @@
             this.Name = "frmSanPham";
             this.Text = "frmSanPham";
             this.Load += new System.EventHandler(this.frmSanPham_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private Library.CheckCboNumber cbDLPin;
+        private Library.CheckNumber txtHeight;
+        private Library.CheckNumber txtWidth;
+        private Library.ComboBoxText cbMCheo;
+        private Library.ComboBoxText cbSim;
+        private Library.ComboBoxText cbHDH;
+        private Library.ComboBoxText cbBLT;
+        private Library.ComboBoxText cbWF;
+        private Library.ComboBoxText cbHieuNang;
+        private Library.ComboBoxText cbScreen;
+        private System.Windows.Forms.ComboBox cbLoaiPin;
+        private System.Windows.Forms.ComboBox cbHang;
         private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton btnThem;
         private System.Windows.Forms.TextBox txtAnh;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTen;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView dgvSanPham;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cbLoaiPin;
-        private System.Windows.Forms.ComboBox cbHang;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DataGridView dgvSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MainImage;
@@ -838,16 +847,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BatteryCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn TypeOfPin;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrandID;
-        private Library.ComboBoxText cbScreen;
-        private Library.CheckNumber txtHeight;
-        private Library.CheckNumber txtWidth;
-        private Library.ComboBoxText cbHieuNang;
-        private Library.ComboBoxText cbHDH;
-        private Library.ComboBoxText cbSim;
-        private Library.ComboBoxText cbMCheo;
-        private Library.CheckCboNumber cbDLPin;
-        private Library.ComboBoxText cbBLT;
-        private Library.ComboBoxText cbWF;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label1;
     }
 }
