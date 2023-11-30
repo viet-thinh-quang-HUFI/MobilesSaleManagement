@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SalesPhoneManagement" Class="SalesPhoneManagementDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-SDLMECNT\QUANG;Initial Catalog=SalesPhoneManagement;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="SalesPhoneManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-QNEC04QL\VIET;Initial Catalog=SalesPhoneManagement;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="SalesPhoneManagementConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ADDRESSOFCUSTOMER" Member="ADDRESSOFCUSTOMERs">
     <Type Name="ADDRESSOFCUSTOMER">
       <Column Name="AddressOfCustomerID" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -11,6 +11,19 @@
       <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Association Name="ADDRESSOFCUSTOMER_BILL" Member="BILLs" ThisKey="AddressOfCustomerID" OtherKey="AddressOfCustomerID" Type="BILL" />
       <Association Name="CUSTOMER_ADDRESSOFCUSTOMER" Member="CUSTOMER" ThisKey="Email" OtherKey="Email" Type="CUSTOMER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WAREHOUSERECEIPT" Member="WAREHOUSERECEIPTs">
+    <Type Name="WAREHOUSERECEIPT">
+      <Column Name="WarehouseReceiptID" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Datetimestamp" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="State" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="WAREHOUSERECEIPT_DETAILSWAREHOUSERECEIPT" Member="DETAILSWAREHOUSERECEIPTs" ThisKey="WarehouseReceiptID" OtherKey="WarehouseReceiptID" Type="DETAILSWAREHOUSERECEIPT" />
+      <Association Name="EMPLOYEE_WAREHOUSERECEIPT" Member="EMPLOYEE" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="EMPLOYEE" IsForeignKey="true" />
+      <Association Name="SUPPLIER_WAREHOUSERECEIPT" Member="SUPPLIER" ThisKey="SupplierID" OtherKey="SupplierID" Type="SUPPLIER" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.BILL" Member="BILLs">
@@ -152,19 +165,6 @@
       <Column Name="PhoneNO" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="Address" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
       <Association Name="SUPPLIER_WAREHOUSERECEIPT" Member="WAREHOUSERECEIPTs" ThisKey="SupplierID" OtherKey="SupplierID" Type="WAREHOUSERECEIPT" />
-    </Type>
-  </Table>
-  <Table Name="dbo.WAREHOUSERECEIPT" Member="WAREHOUSERECEIPTs">
-    <Type Name="WAREHOUSERECEIPT">
-      <Column Name="WarehouseReceiptID" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Datetimestamp" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Total" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="State" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="SupplierID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Association Name="WAREHOUSERECEIPT_DETAILSWAREHOUSERECEIPT" Member="DETAILSWAREHOUSERECEIPTs" ThisKey="WarehouseReceiptID" OtherKey="WarehouseReceiptID" Type="DETAILSWAREHOUSERECEIPT" />
-      <Association Name="EMPLOYEE_WAREHOUSERECEIPT" Member="EMPLOYEE" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="EMPLOYEE" IsForeignKey="true" />
-      <Association Name="SUPPLIER_WAREHOUSERECEIPT" Member="SUPPLIER" ThisKey="SupplierID" OtherKey="SupplierID" Type="SUPPLIER" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
