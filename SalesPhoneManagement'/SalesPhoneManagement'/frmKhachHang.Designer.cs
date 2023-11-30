@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -44,16 +44,16 @@
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
             this.dgvKH = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhoneNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rdoEmail = new System.Windows.Forms.RadioButton();
-            this.rdoTen = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.rdoSDT = new System.Windows.Forms.RadioButton();
+            this.rdoTen = new System.Windows.Forms.RadioButton();
+            this.rdoEmail = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -199,6 +199,7 @@
             this.btnSua.TabIndex = 39;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -216,6 +217,7 @@
             this.btnXoa.TabIndex = 40;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -233,6 +235,7 @@
             this.btnThem.TabIndex = 41;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dgvKH
             // 
@@ -240,28 +243,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Email,
             this.CustomerName,
             this.Password,
             this.PhoneNO});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKH.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKH.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKH.Location = new System.Drawing.Point(4, 4);
             this.dgvKH.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKH.Name = "dgvKH";
@@ -269,6 +272,34 @@
             this.dgvKH.Size = new System.Drawing.Size(1543, 391);
             this.dgvKH.TabIndex = 30;
             this.dgvKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKH_CellClick);
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.DataPropertyName = "CustomerName";
+            this.CustomerName.HeaderText = "Họ tên";
+            this.CustomerName.MinimumWidth = 6;
+            this.CustomerName.Name = "CustomerName";
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Mật khẩu";
+            this.Password.MinimumWidth = 6;
+            this.Password.Name = "Password";
+            // 
+            // PhoneNO
+            // 
+            this.PhoneNO.DataPropertyName = "PhoneNO";
+            this.PhoneNO.HeaderText = "Số điện thoại";
+            this.PhoneNO.MinimumWidth = 6;
+            this.PhoneNO.Name = "PhoneNO";
             // 
             // panel2
             // 
@@ -340,47 +371,19 @@
             this.panel1.Size = new System.Drawing.Size(1557, 449);
             this.panel1.TabIndex = 7;
             // 
-            // Email
+            // rdoSDT
             // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            // 
-            // CustomerName
-            // 
-            this.CustomerName.DataPropertyName = "CustomerName";
-            this.CustomerName.HeaderText = "Họ tên";
-            this.CustomerName.MinimumWidth = 6;
-            this.CustomerName.Name = "CustomerName";
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "Mật khẩu";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            // 
-            // PhoneNO
-            // 
-            this.PhoneNO.DataPropertyName = "PhoneNO";
-            this.PhoneNO.HeaderText = "Số điện thoại";
-            this.PhoneNO.MinimumWidth = 6;
-            this.PhoneNO.Name = "PhoneNO";
-            // 
-            // rdoEmail
-            // 
-            this.rdoEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rdoEmail.AutoSize = true;
-            this.rdoEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoEmail.ForeColor = System.Drawing.Color.White;
-            this.rdoEmail.Location = new System.Drawing.Point(443, 2);
-            this.rdoEmail.Name = "rdoEmail";
-            this.rdoEmail.Size = new System.Drawing.Size(221, 27);
-            this.rdoEmail.TabIndex = 61;
-            this.rdoEmail.TabStop = true;
-            this.rdoEmail.Text = "Tìm kiếm theo email";
-            this.rdoEmail.UseVisualStyleBackColor = true;
+            this.rdoSDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rdoSDT.AutoSize = true;
+            this.rdoSDT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoSDT.ForeColor = System.Drawing.Color.White;
+            this.rdoSDT.Location = new System.Drawing.Point(762, 2);
+            this.rdoSDT.Name = "rdoSDT";
+            this.rdoSDT.Size = new System.Drawing.Size(196, 27);
+            this.rdoSDT.TabIndex = 61;
+            this.rdoSDT.TabStop = true;
+            this.rdoSDT.Text = "Tìm kiếm theo sđt";
+            this.rdoSDT.UseVisualStyleBackColor = true;
             // 
             // rdoTen
             // 
@@ -396,19 +399,19 @@
             this.rdoTen.Text = "Tìm kiếm theo tên";
             this.rdoTen.UseVisualStyleBackColor = true;
             // 
-            // rdoSDT
+            // rdoEmail
             // 
-            this.rdoSDT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rdoSDT.AutoSize = true;
-            this.rdoSDT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSDT.ForeColor = System.Drawing.Color.White;
-            this.rdoSDT.Location = new System.Drawing.Point(762, 2);
-            this.rdoSDT.Name = "rdoSDT";
-            this.rdoSDT.Size = new System.Drawing.Size(196, 27);
-            this.rdoSDT.TabIndex = 61;
-            this.rdoSDT.TabStop = true;
-            this.rdoSDT.Text = "Tìm kiếm theo sđt";
-            this.rdoSDT.UseVisualStyleBackColor = true;
+            this.rdoEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rdoEmail.AutoSize = true;
+            this.rdoEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoEmail.ForeColor = System.Drawing.Color.White;
+            this.rdoEmail.Location = new System.Drawing.Point(443, 2);
+            this.rdoEmail.Name = "rdoEmail";
+            this.rdoEmail.Size = new System.Drawing.Size(221, 27);
+            this.rdoEmail.TabIndex = 61;
+            this.rdoEmail.TabStop = true;
+            this.rdoEmail.Text = "Tìm kiếm theo email";
+            this.rdoEmail.UseVisualStyleBackColor = true;
             // 
             // frmKhachHang
             // 

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressofcustomerDAL.cs" />
     <Compile Include="BrandDAL.cs" />
     <Compile Include="CapicityDAL.cs" />
     <Compile Include="ColorDAL.cs" />
